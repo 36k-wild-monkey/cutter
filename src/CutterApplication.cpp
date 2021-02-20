@@ -76,7 +76,7 @@ CutterApplication::CutterApplication(int &argc, char **argv) : QApplication(argc
 
     // Check rizin version
     QString rzversion = rz_core_version();
-    QString localVersion = "" RZ_GITTAP;
+    QString localVersion = "" RZ_VERSION;
     if (rzversion != localVersion) {
         QMessageBox msg;
         msg.setIcon(QMessageBox::Critical);
